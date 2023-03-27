@@ -2,31 +2,32 @@
   width: 100%;
   height: 90vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
-.aboutTop {
-  width: 100%;
-  height: 45%;
+.aboutLeft {
+  width: 50%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.aboutBottom {
+.aboutRight {
   display: flex;
   flex-direction: column;
-  height: 55%;
+  height: 100%;
   align-items: center;
   margin-top: 50px;
+  width: 50%;
 }
 
-.aboutBottom p {
-  width: 1200px;
+.aboutRight p {
+  width: 80%;
 }
 
-.about .aboutBottom h1 {
+.about .aboutRight h1 {
   font-weight: 400;
   font-size: 70px;
   color: black;
@@ -34,4 +35,16 @@
   display: flex;
   justify-content: center;
   transform: translateY(-40px);
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    height: auto;
+  }
+  .aboutLeft,
+  .aboutRight {
+    width: 100%;
+    height: 100%;
+  }
 }

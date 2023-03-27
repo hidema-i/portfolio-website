@@ -1,13 +1,13 @@
 import React from "react";
 import "../styles/Footer.css";
 
-import { social } from "../social";
+import { Social } from "../Social";
 
 function Footer() {
   return (
     <div className="footer">
       <div className="socialMedia">
-        {social.map((item) => (
+        {Social.map((item) => (
           <a key={item.id} href={item.url}>
             {item.icon}
           </a>
