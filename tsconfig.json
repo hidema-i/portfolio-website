@@ -28,7 +28,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
+    ".next/types/**/*.ts", "src/pages/Menu.jsx", "src/pages/Home.jsx", "src/pages/Contanct.jsx", "src/pages/About.jsx",
     // "src/**/*", "src/**/*.svg"
 
   ],
