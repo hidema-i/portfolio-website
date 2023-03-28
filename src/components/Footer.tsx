@@ -1,14 +1,13 @@
 import React from "react";
 import "../styles/Footer.css";
-
-import { Social } from "../Social";
+import { SocialItem, Social } from "../Social";
 
 function Footer() {
   return (
     <div className="footer">
       <div className="socialMedia">
         {/* Socialコンポーネントの内容を表示 */}
-        {Social.map((item) => (
+        {Social.map((item: SocialItem) => (
           <a key={item.id} href={item.url}>
             {item.icon}
           </a>

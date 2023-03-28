@@ -4,7 +4,13 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-export const Social = [
+export interface SocialItem {
+  id: number;
+  url: string;
+  icon: JSX.Element;
+}
+
+export const Social: SocialItem[] = [
   {
     id: 1,
     url: "https://www.instagram.com",

@@ -11,7 +11,13 @@ import Mix from "../assets/mix.jpg";
 import Salad from "../assets/takeout1.jpg";
 import Burger from "../assets/takeout2.jpg";
 
-export const MenuList = [
+interface MenuItem {
+  name: string;
+  image: string;
+  price: string;
+}
+
+export const MenuList: MenuItem[] = [
   {
     name: "Blended coffee",
     image: Blended,

@@ -1,6 +1,12 @@
 import React from "react";
 
-const MenuItem = ({ image, name, price }) => {
+interface MenuItemProps {
+  image: string;
+  name: string;
+  price: number;
+}
+
+const MenuItem = ({ image, name, price }: MenuItemProps) => {
   return (
     <div className="menuItem">
       <div style={{ backgroundImage: `url(${image})` }}></div>
